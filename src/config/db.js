@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import mongoose from 'mongoose';
 import ENV from './keys.js';
 import print from '../utils/print.js';
