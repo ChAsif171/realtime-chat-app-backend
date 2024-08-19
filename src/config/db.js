@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import mongoose from 'mongoose';
 import ENV from './keys.js';
 import print from '../utils/print.js';
@@ -21,7 +22,7 @@ const DB = () => {
             logger.warn('Mongodb reconnected successfully.');
         });
     } catch (error) {
-        print('error', '${error.message}');
+        print('error', `${error.message}`);
         process.exit(1);
     }
 };
